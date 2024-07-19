@@ -16,7 +16,7 @@ export default function SigInModal({ show, setShow }) {
       console.log("password", password, email);
       try {
         const response = await axios.post(
-          "https://chatbot-backend-six-azure.vercel.app/api/users/auth",
+          "https://chatbot-backend-production-348f.up.railway.app/api/users/auth",
           {
             email,
             password,
@@ -61,7 +61,7 @@ export default function SigInModal({ show, setShow }) {
                                 <div className="flex justify-between">
                                   <Link
                                     to={
-                                      "https://chatbot-backend-six-azure.vercel.app/api/users/auth/google"
+                                      "https://chatbot-backend-production-348f.up.railway.app/api/users/auth/google"
                                     }
                                     type="link"
                                     className="btn-link"
